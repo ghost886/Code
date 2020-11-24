@@ -23,7 +23,9 @@ public class Solution {
             windows.put(s1[right],windows.getOrDefault(s1[right],0)+1);
 
             //判断是否符合条件
-            if(windows.get(s1[right])==need.getOrDefault(s1[right],0))//这里选用等于号是为了避免重复相加
+//            if(s1[right]=='k'&&windows.get(s1[right]).equals(need.getOrDefault(s1[right],0)));
+//                System.out.println(s1[right]+"  "+windows.get(s1[right])+"    "+need.getOrDefault(s1[right],0));
+            if(windows.get(s1[right]).equals(need.getOrDefault(s1[right],0)))//这里选用等于号是为了避免重复相加
                 valid++;
 
             while(left<=right&&windows.get(s1[left])>need.getOrDefault(s1[left],0)){//一定要注意越界的问题
