@@ -19,7 +19,8 @@ public class Solution {
         for(char c:t.toCharArray())//另一种方法是charat()
             need.put(c,need.getOrDefault(c,0)+1);//这两步是初始化需要的数组
         //这个for循环找出的字符串尽可能的包含t里面的字符
-        while(right<s.length()){
+//        while(right<s.length()){
+        for(int i=0;i<10400;i++){
             windows.put(s1[right],windows.getOrDefault(s1[right],0)+1);
 
             //判断是否符合条件
@@ -30,6 +31,7 @@ public class Solution {
 
             while(left<=right&&windows.get(s1[left])>need.getOrDefault(s1[left],0)){//一定要注意越界的问题
                 windows.put(s1[left],windows.get(s1[left])-1);
+                //判断是否符合条件
                 left++;//缩小窗口
             }
 

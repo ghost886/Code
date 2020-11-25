@@ -13,6 +13,7 @@ public class Solution {
         int left=0;
         int right=0;
         int valid=0;
+
         int need_szie=0;
         List<Integer> list=new LinkedList<>();
         for (int i = 0; i < p_char.length; i++) {
