@@ -15,7 +15,7 @@ public class test {
         TreeNode node6=new TreeNode(6,node5,node7);
         TreeNode node4=new TreeNode(4,node1,node6);
         Solution solution=new Solution();
-        TreeNode node=solution.deleteNode(node4,7);
+        TreeNode node=solution.deleteNode(node4,0);
         System.out.println(node.val);
     }
 }
