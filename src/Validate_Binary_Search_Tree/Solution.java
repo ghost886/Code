@@ -1,5 +1,4 @@
 package Validate_Binary_Search_Tree;
-
 public class Solution {
     public boolean first_time=true;
     public int before;
